@@ -35,17 +35,19 @@ $(function () {
     }
 
     const headerBtn = document.querySelector('.header__button');
-    const clientsBtn = document.querySelector('.clients__btn');
+    const clientsBtn = document.querySelectorAll('.clients__btn');
     const footer = document.querySelector('.footer');
 
     headerBtn.addEventListener('click', (e) => {
         e.preventDefault();
         scrollTo(footer);
     });
-    clientsBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        scrollTo(footer);
-    });
+    for (let i = 0; i < clientsBtn.length; i++) {
+        clientsBtn[i].addEventListener('click', (e) => {
+            e.preventDefault();
+            scrollTo(footer);
+        });
+    }
 
     /* ANIMATION */
 
