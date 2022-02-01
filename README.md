@@ -1,3 +1,4 @@
-# HTML, CSS, jQuery, JavaScript 
-# Плавный скролл на JS
-# Анимация JS CSS
+HTML, CSS, jQuery, JavaScript 
+Адаптив
+Плавный скролл на JS
+Анимация JS CSS
